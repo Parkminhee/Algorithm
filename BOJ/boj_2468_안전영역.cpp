@@ -18,11 +18,10 @@ int dr[] = { -1, 1, 0, 0 };
 int dc[] = { 0, 0, -1, 1 };
 
 void FindDownUp(int h) {
-	//cout << "높이 : " << h << endl;
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < N; j++) {
 			if (Map[i][j] > h) {
-				NewMap[i][j] = 1;		// 0인 경우 물에 잠김
+				NewMap[i][j] = 1;		
 			}
 		}
 	}
