@@ -1,18 +1,18 @@
 #include <iostream>
-#include <ctime>
+//#include <ctime>
 
 using namespace std;
 
 int N, K;
 
 int main() {
-	clock_t start, end;
-	double result;
+	//clock_t start, end;
+	//double result;
 	int count = 0;
 
 	cin >> N >> K;
 
-	start = clock();
+	//start = clock();
 
 	while (true) {
 		if (N == 1) break;
@@ -25,10 +25,10 @@ int main() {
 
 	cout << count << endl;
 
-	end = clock();
-	result = (double)(end - start) / CLOCKS_PER_SEC;
+	//end = clock();
+	//result = (double)(end - start) / CLOCKS_PER_SEC;
 
-	cout << result << endl;
+	//cout << result << endl;
 
 	return 0;
 }
