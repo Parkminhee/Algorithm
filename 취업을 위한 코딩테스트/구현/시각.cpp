@@ -1,4 +1,4 @@
-/*
+/* O(N)
 #include <iostream>
 #include <string>
 
@@ -33,6 +33,8 @@ int main() {
 	return 0;
 }
 */
+
+// O(N)
 
 #include <iostream>
 
