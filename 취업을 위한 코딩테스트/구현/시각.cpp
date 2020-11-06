@@ -35,7 +35,7 @@ int main() {
 */
 
 // O(N)
-
+/*
 #include <iostream>
 
 using namespace std;
@@ -56,6 +56,30 @@ int main() {
 		for (int j = 0; j < 60; j++) {
 			for (int k = 0; k < 60; k++) {
 				if (Check(i, j, k)) Ans += 1;
+			}
+		}
+	}
+
+	cout << Ans << endl;
+
+	return 0;
+}
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int Ans;
+int N;
+
+int main() {
+	cin >> N;
+
+	for (int i = 0; i <= N; i++) {
+		for (int j = 0; j < 60; j++) {
+			for (int k = 0; k < 60; k++) {
+				if (i % 10 == 3 || j % 10 == 3 || j / 10 == 3 || k % 10 == 3 || k / 10 == 3) Ans += 1;
 			}
 		}
 	}
