@@ -34,7 +34,12 @@ int main() {
 	sort(B.begin(), B.end(), MyCmp);
 
 	for (int i = 0; i < K; i++) {
-		A[i] = B[i];
+		if (A[i] < B[i]) {
+			int tmp = A[i];
+			A[i] = B[i];
+			B[i] = tmp;
+		}
+		else break;
 	}
 
 	int sum = 0;
